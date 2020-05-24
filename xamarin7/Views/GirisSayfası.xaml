@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="xamarin7.Views.GirisSayfası">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" BackgroundColor="Black" HeightRequest="70">
+                    <ImageButton x:Name="image" HorizontalOptions="Center" VerticalOptions="Center" Source="{Binding}" BackgroundColor="Transparent"></ImageButton>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Üye Girişi" TextColor="Black" FontSize="18" Margin="8"></Label>
+                    <Entry Placeholder="E-posta" x:Name="Email"></Entry>
+                    <Entry Placeholder="Şifre" x:Name="Pass" IsPassword="True"></Entry>
+                    <Button Text="Giriş Yap" BackgroundColor="Orange" x:Name="Login" ></Button>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                        <CheckBox Color="Black"></CheckBox>
+                        <Label Text="Beni Hatırla" TextColor="Black" TranslationY="15"></Label>
+                        <Button BackgroundColor="Transparent" Text="Şifremi Unuttum" TranslationX="80" TranslationY="-2" FontSize="13"></Button>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Hızlı Üyelik" TextColor="Black" FontSize="18" Margin="8"></Label>
+                    <Entry Placeholder="Adınız" x:Name="isim"></Entry>
+                    <Entry Placeholder="Soyadınız" x:Name="soyad"></Entry>
+                    <Entry Placeholder="E-posta" x:Name="email"></Entry>
+                    <Entry Placeholder="Şifre" IsPassword="True" x:Name="pass"></Entry>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                        <CheckBox Color="Black"></CheckBox>
+                        <Label Text="Kampanya, duyuru, bilgilendirmelerden e-posta ile haberdar olmak istiyorum." TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                        <CheckBox Color="Black"></CheckBox>
+                        <Label Text="Kampanya, duyuru, bilgilendirmelerden sms ile haberdar olmak istiyorum." TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                        <CheckBox Color="Black"></CheckBox>
+                        <Label Text="Üyelik koşullarını ve kişisel verilerimin korunmasını kabul ediyorum." TextColor="Black"></Label>
+
+                    </StackLayout>
+                    <Button Text="Üye Ol" BackgroundColor="Orange" x:Name="login"></Button>
+
+                </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
